@@ -11,6 +11,9 @@ body{
 	background: #FFFAFA
 
 }
+a{
+	text-decoration: none;
+}
 .header {
 	width: 100%;
 	position: fixed;
@@ -516,6 +519,9 @@ hr{
 }
 	.navbar{
    	display: none;
+   }
+   .form-control{
+   	margin-bottom: 10px !important;
    }
     .col-xs-1 {width: 8.33%;}
     .col-xs-2 {width: 16.66%;}
