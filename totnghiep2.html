@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="totnghiep2.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+	
+									<!-- Tieu De -->
+	
+		<div class="container logo-header">
+			<div class="logo-wrapper col-md-3 col-sm-12 col-xs-12">
+                <a href="../totnghiep1/Totnghiep.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="search-wrapper col-md-6 col-sm-6 col-xs-12">	
+					<form>
+						<select>
+							<option>All categories</option>
+							<option value="accessories">Accessories</option>
+							<option value="belts">&nbsp;&nbsp;&nbsp;Belts</option>
+							<option value="bow">&nbsp;&nbsp;&nbsp;Bow</option>
+							<option value="eyeglasses">&nbsp;&nbsp;&nbsp;Eyeglasses</option>
+							<option value="hat">&nbsp;&nbsp;&nbsp;Hat</option>
+							<option value="bags">Bags</option>
+							<option value="backpacks">&nbsp;&nbsp;&nbsp;Backpacks</option>
+							<option value="handbags">&nbsp;&nbsp;&nbsp;Handbags</option>
+							<option value="messenger-bags">&nbsp;&nbsp;&nbsp;Messenger bags</option>
+							<option value="wallets">&nbsp;&nbsp;&nbsp;Wallets</option>
+							<option value="beauties">Beauties</option>
+							<option value="eyeliner">&nbsp;&nbsp;&nbsp;Eyeliner</option>
+						</select>
+						<input type="text" id="search1" placeholder="Search for products" autocomplete="off">
+					
+					</form>
+			</div>
+			<div class="footer-wrapper col-md-2  col-sm-6 col-xs-12">
+				<div class="shop-cart-wrapper">
+					<div class="shop-cart-wrapper-left">
+						<span class="glyphicon glyphicon-envelope"></span>
+					</div>
+					<div class="shop-cart-wrapper-right">$<b>25.000(0)</b></div>
+				
+				</div><!-- End shop-cart-wrapper-->
+				<div class="shop-wrapper">Your shopping cart is empty</div>
+			</div>
+		</div>
+	<div class="clear"></div>
+
+	                                   <!-- Menu -->
+	<div id="header">
+		<nav class="navbar navbar-default">
+		       <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			     <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-align-justify"></span>  SHOP BY CATEGORY</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li class="menu-cap1">
+					            	<a href="#">Supermarket 1</a>
+						            	
+					            </li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Supermarket 2</a></li>
+					             <li role="separator" class="divider"></li>
+					            <li><a href="#">Supermarket 3</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Classsic box</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">One more separated link</a></li>
+					          </ul>
+					        </li>
+
+					         <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAGE <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Avocado</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Apple</a></li>
+					             <li role="separator" class="divider"></li>
+					            <li class="menu-cap1" onclick="show()" id="show">
+					            	<a href="#" style="position: relative;">Orange <span class="glyphicon glyphicon-triangle-right" style="text-align: right;position: absolute;right: 5px;top: 7px"></span></a>
+
+					            		<ul class="dropdown-menu menu-cap4" id="hien">
+								            <li><a href="#">Avocado</a></li>
+								            <li role="separator" class="divider"></li>
+								            <li><a href="#">Apple</a></li>
+								             <li role="separator" class="divider"></li>
+								            <li><a href="#">Orange </a></li>
+								            <li role="separator" class="divider"></li>
+								            <li><a href="#">Banana </a></li>
+								            <li role="separator" class="divider"></li>
+								            <li><a href="#">Grapefruit (or Pomelo)</a></li>
+								        </ul>
+					            </li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Banana </a></li>
+					            <li role="separator" class="divider"></li>
+					            <li>
+					            	<a href="#">Grapefruit (or Pomelo)</a>
+					            </li>
+					          </ul>
+					        </li>
+
+					         <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG <span class="caret"></span></a>
+					         <ul class="dropdown-menu">
+					            <li><a href="#">Starfruit </a></li>
+					            <li role="separator" class="divider"></li>
+					            <li class="menu-cap1">
+					            	<a href="#" style="position: relative;">Mango <span class="glyphicon glyphicon-triangle-right" style="text-align: right;position: absolute;right: 5px;top: 7px"></span></a>
+					            		 <ul class="dropdown-menu menu-cap3">
+								            <li><a href="#">Avocado</a>
+
+								            </li>
+								            <li role="separator" class="divider"></li>
+								            <li><a href="#">Apple</a></li>
+								             <li role="separator" class="divider"></li>
+								            <li><a href="#">Orange </a></li>
+								            <li role="separator" class="divider"></li>
+								            <li><a href="#">Banana </a></li>
+								            <li role="separator" class="divider"></li>
+								            <li><a href="#">Grapefruit (or Pomelo)</a></li>
+								          </ul>
+					            </li>
+					             <li role="separator" class="divider"></li>
+					            <li><a href="#">Pineapple</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Mangosteen</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Mandarin (or Tangerine) </a></li>
+					          </ul>
+
+					        </li>
+
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHOP <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Kiwi fruit </a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Kumquat 2</a></li>
+					             <li role="separator" class="divider"></li>
+					            <li><a href="#">Jackfruit</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Durian</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Lemon</a></li>
+					          </ul>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Aprico</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Peach</a></li>
+					             <li role="separator" class="divider"></li>
+					            <li><a href="#"> Cherry</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Sapota</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Persimmon</a></li>
+					          </ul>
+					        </li>
+
+					         <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHORTCODE <span class="caret"></span></a>
+					         <ul class="dropdown-menu">
+					            <li><a href="#">Pear</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#"> Dragon fruit </a></li>
+					             <li role="separator" class="divider"></li>
+					            <li><a href="#">Watermelon</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#"> Longan</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#"> Pomegranate</a></li>
+					          </ul>
+					        </li>
+
+					         <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">THEMEFEATURE <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">One more separated link</a></li>
+					          </ul>
+					        </li>
+
+					         <li class="dropdown abcde">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US 
+					         
+					        </li>
+				      </ul>
+				      
+				      
+				    </div><!-- /.navbar-collapse -->
+		 	  </div><!-- /.container -->
+		</nav> <!-- End nav -->
+	</div>   <!-- End header -->  
+	<div class="clear"></div>
+	<!-- Banner -->
+	<div class="container-fluid banner-chinh">
+		<div class="accessories">
+			<div class="accessories-noidung">
+				<h2>Accessories</h2>
+				<div class="accessories-noidung-1">
+					<a href="../totnghiep1/Totnghiep.html">Home</a>
+					<span>/</span>
+					<a href="../totnghiep2/totnghiep2.html">Shop</a>
+					<span>/</span>
+					<a href="../totnghiep1/Totnghiep.html">Accessories</a>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End banner --> 
+
+	<!-- Content -->
+	<div class="container">
+		                          <!-- conten-left -->
+		<div class="content-left col-xl-3 col-lg-3 col-md-12 col-sm-12">
+			<div class="content-left-heading">
+				<h4>CATEGORIES</h4>
+			</div>
+			<hr>
+			<div class="content-left-noidung col-xl-12 col-lg-12 col-md-3 col-sm-12">
+				<ul>
+					<li>
+						<a href="#" style="color: #008080">Accessories (11)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Bags (5)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Beauties (7)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Dresses (10)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Pants (8))</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Jackets (1)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Shoes (13)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">Sweaters (7)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+					<li>
+						<a href="#">T-Shirt (8)</a>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="left panel panel-default col-xl-12 col-lg-12 col-md-5 col-sm-12"">
+				 <div class="panel-body" style="text-align: center;">
+					    FILTER BY PRICE
+					</div>
+				 <div class="panel-footer">
+					  	<div style="padding: 2px;background: #40bea7">
+					  		<hr>
+						  	<hr>
+						  	<hr>
+						  	<hr>
+						  	<hr>
+						  	<hr>
+						  	<hr>
+					    </div>
+					  	<div class="filter">FILTER</div>
+					  	<p style="text-align: center;margin-top: 10px;">FILTER Price: $39 — $520</p>
+				    </div>
+			</div><!--left -->
+
+			<div class="filter-by-color col-xl-12 col-lg-12 col-md-4 col-sm-12">
+				<div class="panel panel-default">
+					  <div class="panel-body" style="text-align: center;">
+					    FILTER BY COLOR
+					  </div>
+					  <hr>
+					  <div class="panel-footer">
+
+						  	<div class="row1">
+						  		<div class="color" style="background: #FFE4E1"></div>
+							  	<div class="color"  style="background: #8470FF"></div>
+							  	<div class="color"  style="background: #F0FFFF"></div>
+							  	<div class="color"  style="background: #54FF9F"></div>
+							  	<div class="color"  style="background: #9AFF9A"></div>
+						  	</div>
+						  	<div class="row1">
+						  		<div class="color" style="background: #B3EE3A"></div>
+							  	<div class="color"  style="background: #FFFF00"></div>
+							  	<div class="color"  style="background: #EEEE00"></div>
+							  	<div class="color"  style="background:#8B658B"></div>
+							  	<div class="color"  style="background: #CD9B9B"></div>
+						  	</div>
+						  	<div class="row1">
+						  		<div class="color" style="background: #B3EE3A"></div>
+							  	<div class="color"  style="background: #FFFF00"></div>
+							  	<div class="color"  style="background: #EEEE00"></div>
+							  	<div class="color"  style="background:#8B658B"></div>
+							  	<div class="color"  style="background: #CD9B9B"></div>
+						  	</div>
+						</div>  	
+				</div>
+			</div><!-- End filter-by-color -->
+
+		
+			
+		</div><!-- End content-left -->
+		
+		                          <!-- Content-right -->
+
+		<div class="content-right col-xl-9 col-lg-9 col-md-12 col-sm-12">
+			<div class="shortcode-heading-wrapper">
+		    	<div class="icon1"><i class="fa fa-cc-jcb" aria-hidden="true"></i></div>
+		    	
+		    	<h4 class="heading-tittle">LATEST NEWS</h4>
+		    	<div class="icon2"><i class="fa fa-cc-visa" aria-hidden="true"></i></div>
+	    	
+    		</div>
+    		
+			
+			<div class="clear"></div>
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/40-330x402.jpg" id="anh1" onmousemove="thayanh1()" onmouseleave="thayanh2()">
+					      <div class="caption">
+					        <h5>BOW, EYEGLASSES</h5>
+					        <p>Aenean varius default <br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/34-330x402.jpg" id="anh2" onmousemove="thayanh3()" onmouseleave="thayanh4()">
+					      <div class="caption">
+					          <h5>ACCESSORES, BOW</h5>
+					        <p>Aenean varius simple <br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/28-330x402.jpg" id="anh3" onmousemove="thayanh5()" onmouseleave="thayanh6()">
+					      <div class="caption">
+					            <h5>BOW, JEAN PANTS</h5>
+					        <p>Cras im external <br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/10-330x402.jpg" id="anh4" onmousemove="thayanh7()" onmouseleave="thayanh8()">
+					      <div class="caption">
+					        <h5>HAT, T-SHIRT</h5>
+					        <p>Cras im variable<br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+			</div><!-- End row -->
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/43-330x402.jpg" id="anh5" onmousemove="thayanh9()" onmouseleave="thayanh10()">
+					      <div class="caption">
+					        <h5>ACCESSORIES, HAIRS</h5>
+					        <p>Cras isum default <br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/41-330x402.jpg" id="anh6"  onmousemove="thayanh11()" onmouseleave="thayanh12()" >
+					      <div class="caption">
+					          <h5>ACCESSORIES, PANTS</h5>
+					        <p>Cras isum group <br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/46-330x402.jpg" id="anh7"  onmousemove="thayanh13()" onmouseleave="thayanh14()">
+					      <div class="caption">
+					            <h5>ACCESSORIES, BAGS</h5>
+					        <p>Donec cum default <br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+				  <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-xs-12">
+					    <div class="thumbnail">
+					      <img src="img/52-330x402.jpg" id="anh8"  onmousemove="thayanh15()" onmouseleave="thayanh16()">
+					      <div class="caption">
+					        <h5>ACCESSORIES, BAGS</h5>
+					        <p>Donec cum simple<br> $130.00</p>				        
+					      </div>
+					    </div>
+				  </div><!-- End col-sm-6 col-md-3 -->
+			</div><!-- End row -->
+			<div class="danh-sach col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<nav aria-label="Page navigation">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+				</nav>
+			</div><!-- End danh-sach -->
+
+			<div class="right-noidung-banner col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	    		<div class="right-noidung-banner1">
+	    			<h2>NEWSLETTER</h2>
+	    			<p style="padding: 12px">Enjoy our newsletter to stay updated with the latest news and special sales. <br>
+					Let's your email address here!</p>
+	    		</div>
+	    		<div class="right-noidung-banner2">
+	    			<div class="input-group">
+						  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+						 
+					</div><!-- input -->
+	    			
+	    			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Nhập Email</button>
+					
+
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="exampleModalLabel">Đăng Ký</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form>
+					          <div class="form-group">
+					            <label for="recipient-name" class="control-label">Đăng Ký</label>
+					            <input type="text" class="form-control" id="recipient-name">
+					          </div>
+					          <div class="form-group">
+					            <label for="message-text" class="control-label">Tên Đăng Ký</label>
+					            <input class="form-control" id="message-text"></input>
+					          </div>
+					        </form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Mật Khẩu</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+	    		</div><!-- End right-noidung-banner2 -->
+	    	</div><!-- End  right-noidung-banner"-->
+		</div><!-- End content-right -->
+	</div><!-- End content -->
+
+	<!-- Footer -->
+    <div class="container-fluid" id="footers">
+    	 <div class="container">
+	    	<div class="footer-1 col-md-3 col-sm-6 col-xs-12">
+	    		<h3>ABOUT US</h3>
+	    		<p><b>Office:</b> <i>868 Fake Street, New York</i></p>
+	    		<p><b>Phone:</b> <i>0976030836</i></p>
+	    		<p><b>Fax: </b><i>(08) 08 4752 1499</i></p>
+	    		<a href="#"><p>Email: phucvuspk@gmail.com</p></a>
+	    		<span>
+	    			<i class="fa fa-leaf" aria-hidden="true"></i>
+	    			<i class="fa fa-heartbeat" aria-hidden="true"></i>
+	    			<i class="fa fa-gavel" aria-hidden="true"></i>
+	    			<i class="fa fa-gift" aria-hidden="true"></i>
+	    			<i class="fa fa-paw" aria-hidden="true"></i>
+	    		</span>
+	    	</div>
+	    	<div class="footer-1 col-md-3 col-sm-6 col-xs-12">
+	    		<h3>INFOMATION</h3>
+	    		<p>Frequently Asked Questions</p>
+	    		<p>Terms and Conditions</p>
+	    		<p>Privacy Policy</p>
+	    		<p>Terms and Conditions</p>
+	    		<p>Delivery Information</p>
+	    	</div>
+	    	<div class="footer-1 col-md-3 col-sm-6 col-xs-12">
+	    		<h3>RECENT POSTS</h3>
+	    		<p>Frequently Asked Questions</p>
+	    		<p>Terms and Conditions</p>
+	    		<p>Privacy Policy</p>
+	    		<p>Terms and Conditions</p>
+	    		<p>Delivery Information</p>
+	    	</div>
+	    	<div class="footer-1 col-md-3 col-sm-6 col-xs-12">
+	    		<h3>ABOUT US</h3>
+	    		<p><b>Office:</b> <i>868 Fake Street, New York</i></p>
+	    		<p><b>Phone:</b> <i>0976030836</i></p>
+	    		<p><b>Fax: </b><i>(08) 08 4752 1499</i></p>
+	    		<a href="#"><p>Email: phucvuspk@gmail.com</p></a>
+	    		<span>
+	    			<i class="fa fa-leaf" aria-hidden="true"></i>
+	    			<i class="fa fa-heartbeat" aria-hidden="true"></i>
+	    			<i class="fa fa-gavel" aria-hidden="true"></i>
+	    			<i class="fa fa-gift" aria-hidden="true"></i>
+	    			<i class="fa fa-paw" aria-hidden="true"></i>
+	    		</span>
+	    	</div>
+	    </div><!-- End footer-1 -->
+	   
+	 <hr>
+	  
+	    <div class="container footer-logo ">
+	    	<div class="footer-logo-1"><img src="img/logo-footer.png"></div>
+	    	<div class="footer-logo-1">
+	    		<a href="#">
+	    			<p>© 2015 GonShop. Theme by theme-sky.com</p>
+	    		</a>
+	    	</div>
+	    </div>
+    </div><!-- End footer -->
+
+
+
+
+
+
+
+
+                                   <!--back-to-top -->
+	<div id="back-to-top"><span class="glyphicon glyphicon-arrow-up"></span></div>
+
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="totnghiep2.js"></script>
+</body>
+</html>
